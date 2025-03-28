@@ -37,7 +37,7 @@ const CONFIG = {
           description:
             'Built an AI-powered resume builder using Strapi (backend) and React (frontend), enabling seamless resume creation and sharing',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            'resume',
           link: 'https://github.com/bisht2961/ai_resume_generator',
         },
         {
@@ -45,7 +45,7 @@ const CONFIG = {
           description:
             'A full-stack news aggregation platform that fetches and curates news from the News API.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            'news',
           link: 'https://github.com/bisht2961/news_aggregator_fe',
         },
         {

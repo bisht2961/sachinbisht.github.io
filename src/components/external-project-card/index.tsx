@@ -66,6 +66,17 @@ const ExternalProjectCard = ({
     return array;
   };
 
+  const getProjectLogo = (imageLogo:string)=>{
+    if(imageLogo.startsWith('resume')){
+      return "src\\assets\\resume.png";
+    }else if(imageLogo.startsWith('news')){
+      console.log("assets\\news_logo.png");
+      return "src\\assets\\news_logo.png";
+    }else{
+      return imageLogo;
+    }
+  }
+
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
       <a
@@ -100,8 +111,8 @@ const ExternalProjectCard = ({
                     <div className="avatar opacity-90">
                       <div className="w-24 h-24 mask mask-squircle">
                         <LazyImage
-                          src={item.imageUrl}
-                          alt={'thumbnail'}
+                          src={getProjectLogo(item.imageUrl)}
+                          alt={"thumbnail"}
                           placeholder={skeleton({
                             widthCls: 'w-full',
                             heightCls: 'h-full',
